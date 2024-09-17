@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+form {
+    width: 300px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 5px;
+    border: 1px solid gray;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+div {
+    width: 300px;
+}
+
+ul {
+    list-style-type: none;
+}
