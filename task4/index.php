@@ -29,6 +29,12 @@ $conn = new mysqli($server, $dbusername, $dbpassword, $dbname);
         $conn->query($sql);
     }
 
+    if (isset($_GET["delete"])) {
+        $deleteId = $_GET["delete"];
+        $sql = "DELETE FROM `first_work` WHERE id = $deleteId";
+        $conn->query($sql);
+    }
+
     if (isset($_POST["fullNameEdit"]) || isset($_POST["date"])) {
         $id = $_POST["id"];
         $fullName = trim($_POST["fullNameEdit"]);
@@ -36,6 +42,7 @@ $conn = new mysqli($server, $dbusername, $dbpassword, $dbname);
     
         $sql = "UPDATE `first_work` SET value = '$fullName', action_date = '$date' WHERE id = '$id'";
         $conn->query($sql);
+        $_GET["edit"] = null;
     } 
 
     $sql = "SELECT * FROM `first_work`";
@@ -46,16 +53,26 @@ $conn = new mysqli($server, $dbusername, $dbpassword, $dbname);
         while($row = $result->fetch_assoc()) {
             array_push($students, $row);
         } 
-    } 
+    }
     ?>
-
-    <? for ($i = 0; $i < sizeof($students); $i++) { ?>
-    <form action method="post">
-        <input type="text" name="id" value="<? echo $students[$i]["id"] ?>" hidden>
-        <input type="text" name="fullNameEdit" value="<? echo $students[$i]["value"] ?>" required>
-        <input type="datetime-local" name="date" value="<? echo $students[$i]["action_date"] ?>" required>
-        <input type="submit" value="Редактировать">
-    </form>
-    <? } ?>
+    <table border="1">
+        <? for ($i = 0; $i < sizeof($students); $i++) { ?>
+            <tr>
+                <? if ($_GET["edit"] == $students[$i]["id"]) { ?>
+                    <form action method="post">
+                        <td><input type="text" name="id" value="<? echo $students[$i]["id"] ?>" hidden></td>
+                        <td><input type="text" name="fullNameEdit" value="<? echo $students[$i]["value"] ?>" required></td>
+                        <td><input type="datetime-local" name="date" value="<? echo $students[$i]["action_date"] ?>" required></td>
+                        <td><input type="submit" value="Сохранить"></td>
+                    </form>
+                <? } else { ?>
+                    <td><? echo $students[$i]["value"] ?></td>
+                    <td><? echo $students[$i]["action_date"] ?></td>
+                    <td><a href="?edit=<? echo $students[$i]["id"] ?>">Редактировать</a></td>
+                    <td><a href="?delete=<? echo $students[$i]["id"] ?>">Удалить</a></td>
+                <? } ?>
+            </tr>
+        <? } ?>
+    </table>
 </body>
 </html>
