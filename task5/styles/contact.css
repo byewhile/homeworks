@@ -1,0 +1,28 @@
+.contactContainerText {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.contactContainerText div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 1%;
+    height: 25%;
+    width: 25%;
+}
+.contactContainerText h3 {
+    font-size: 26px;
+    font-weight: 500;
+}
+.contactContainerText a {
+    font-size: 20px;
+    color: gray;
+}
+.contactContainerText a:hover, .contactContainerText a:focus {
+    color: black;
+}

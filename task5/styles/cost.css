@@ -1,0 +1,44 @@
+.costContainerText {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.costContainerText div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 50px;
+    width: 25%;
+    height: 60%;
+    border-bottom: 2px solid black;
+    padding: 1%;
+}
+.costContainerText div:nth-child(1) {
+    animation: moveOnTop 1s ease forwards;
+}
+.costContainerText div:nth-child(3) {
+    animation: moveOnBottom 1s ease forwards;
+}
+@keyframes moveOnTop {
+    100% {
+        transform: translateY(-100px);
+    }
+}
+@keyframes moveOnBottom {
+    100% {
+        transform: translateY(100px);
+    }
+}
+.costContainerText h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.costContainerText ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    font-size: 20px;
+}
+.costContainerText span {
+    font-size: 24px;
+}

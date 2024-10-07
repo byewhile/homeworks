@@ -1,0 +1,18 @@
+.technologiesContainerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.technologiesContainerText h2 {
+    font-size: 32px;
+    font-weight: 500;
+}
+.technologiesContainerText p {
+    font-size: 20px;
+}
+.technologiesContainerText ul {
+    display: flex;
+    gap: 50px;
+    font-size: 32px;
+}

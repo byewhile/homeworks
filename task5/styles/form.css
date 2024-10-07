@@ -1,0 +1,39 @@
+.formContainerText {
+    display: flex;
+    align-items: center;
+    font-size: 46px;
+    width: 50%;
+}
+.formContainerForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+input, textarea {
+    background-color: rgba(128, 128, 128, 0.05);
+    color: rgba(128, 128, 128, 0.7);
+    outline: none;
+    width: 50%;
+    border: none;
+    padding: 1%;
+    font-size: 20px;
+}
+*::placeholder {
+    color: rgba(128, 128, 128, 0.7);
+}
+input[type="submit"] {
+    cursor: pointer;
+    width: 25%;
+    color: black;
+    background-color: transparent;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
