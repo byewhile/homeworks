@@ -1,27 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
   <loc>http://localhost/task5/index.php/</loc>
   <lastmod>2024-10-07T11:30:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.0</priority>
 </url>
 <url>
   <loc>http://localhost/task5/portfolio.php/</loc>
   <lastmod>2024-10-07T11:30:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.5</priority>
 </url>
 <url>
   <loc>http://localhost/task5/technologies.php/</loc>
   <lastmod>2024-10-07T11:30:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.5</priority>
 </url>
 <url>
   <loc>http://localhost/task5/cost.php/</loc>
   <lastmod>2024-10-07T11:30:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.5</priority>
 </url>
 <url>
   <loc>http://localhost/task5/contact.php/</loc>
   <lastmod>2024-10-07T11:30:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.5</priority>
 </url>
 <url>
   <loc>http://localhost/task5/form.php/</loc>
   <lastmod>2024-10-07T11:30:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.5</priority>
 </url>
 </urlset>
