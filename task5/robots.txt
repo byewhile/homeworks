@@ -1,7 +1,8 @@
 User-agent: *
-Allow: http://localhost/task5/index.php
-Allow: http://localhost/task5/portfolio.php
-Allow: http://localhost/task5/technologies.php
-Allow: http://localhost/task5/cost.php
-Allow: http://localhost/task5/contact.php
-Allow: http://localhost/task5/form.php
+
+Disallow: /styles
+
+Allow: /public
+Allow: /components
+
+Sitemap: http://localhost/sitemap.xml
