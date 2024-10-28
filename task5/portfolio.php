@@ -26,9 +26,9 @@
                     </a>
                 </div>
                 <div>
-                    <a href="https://byewhile.ru/dora-assembly/" target="_blank">
+                    <a href="https://byewhile.ru/assembly/" target="_blank">
                         <img src="./public/portfolioImg2.png" alt="Porfolio img">
-                        <h3>byewhile.ru - сборка Доры</h3>
+                        <h3>byewhile.ru - сборка</h3>
                     </a>
                 </div>
             </div>
