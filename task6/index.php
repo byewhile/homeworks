@@ -1,6 +1,6 @@
 <?php
 if (!isset($_GET["page"])) {
-    header("Location: http://localhost/task6/index.php?page=1");
+    header("Location: index.php?page=1");
 }
 require_once "db.php" 
 ?>
@@ -58,7 +58,7 @@ require_once "db.php"
             $pageCount = $result->num_rows;
 
             for ($i = 1; $i <= ceil($pageCount / 20); $i++) { ?>
-                <a href="/task6/index.php?page=<? echo $i ?>"><? echo $i ?></a>
+                <a href="index.php?page=<? echo $i ?>"><? echo $i ?></a>
             <? } ?>
         </ul>
     </div>
