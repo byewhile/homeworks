@@ -1,6 +1,6 @@
 <header>
     <div>
-        <img src="./public/favicon.ico" alt="Logo"><h1></h1>
+        <img src="public/favicon.ico" alt="Logo"><h1></h1>
     </div>
     <nav>
         <ul>

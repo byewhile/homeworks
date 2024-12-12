@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<? require_once "components/head.php" ?>
     <title>Форма заявки услуг</title>
-    <meta name="description" content="Веб-студия - форма заявки услуг">
-    <link rel="icon" href="./public/favicon.ico">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/form.css">
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
     <div class="wrapper">
-        <? require_once "./components/header.php" ?>
+        <? require_once "components/header.php" ?>
         <main>
             <div class="formContainerText">
                 <span>Свяжитесь с нами прямо сейчас</span>

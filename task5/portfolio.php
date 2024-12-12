@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<? require_once "components/head.php" ?>
     <title>Портфолио</title>
-    <meta name="description" content="Веб-студия - портфолио">
-    <link rel="icon" href="./public/favicon.ico">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/portfolio.css">
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles/portfolio.css">
 </head>
 <body>
     <div class="wrapper">
-        <? require_once "./components/header.php" ?>
+        <? require_once "components/header.php" ?>
         <main>
             <div class="portfolioContainerText">
                 <h2>Мы разрабатываем индивидуальные набор технологий</h2>
@@ -21,13 +13,13 @@
             <div class="portfolioContainerImg">
                 <div>
                     <a href="https://byewhile.ru/find-emoji/" target="_blank">
-                        <img src="./public/portfolioImg1.png" alt="Porfolio img">
+                        <img src="public/portfolioImg1.png" alt="Porfolio img">
                         <h3>byewhile.ru - найди emoji</h3>
                     </a>
                 </div>
                 <div>
                     <a href="https://byewhile.ru/assembly/" target="_blank">
-                        <img src="./public/portfolioImg2.png" alt="Porfolio img">
+                        <img src="public/portfolioImg2.png" alt="Porfolio img">
                         <h3>byewhile.ru - сборка</h3>
                     </a>
                 </div>

@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<? require_once "components/head.php" ?>
     <title>Главная страница</title>
-    <meta name="description" content="Веб-студия - главная страница">
-    <link rel="canonical" href="http://localhost/task5/index.php">
-    <link rel="icon" href="./public/favicon.ico">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/home.css">
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
     <div class="wrapper">
-        <? require_once "./components/header.php" ?>
+        <? require_once "components/header.php" ?>
         <main>
             <div class="homeContainerText">
                 <p>Мы внедряем цифровые технологии</p>
@@ -25,10 +16,10 @@
             </div>
             <div class="homeContainerImg">
                 <div class="imgsContainer">
-                    <img src="./public/homeImg1.jpg" alt="Home img">
-                    <img src="./public/homeImg2.jpg" alt="Home img">
-                    <img src="./public/homeImg3.jpg" alt="Home img">
-                    <img src="./public/homeImg4.jpg" alt="Home img">
+                    <img src="public/homeImg1.jpg" alt="Home img">
+                    <img src="public/homeImg2.jpg" alt="Home img">
+                    <img src="public/homeImg3.jpg" alt="Home img">
+                    <img src="public/homeImg4.jpg" alt="Home img">
                 </div>
             </div>
         </main>

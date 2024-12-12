@@ -1,5 +1,6 @@
 <?php
 require_once "db.php";
+session_start();
 if (isset($_POST["login"]) && isset($_POST["password"])) {
     $login = trim($_POST["login"]);
     $password = trim($_POST["password"]);
@@ -8,16 +9,7 @@ if (isset($_POST["login"]) && isset($_POST["password"])) {
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-        setcookie("admin", true, time() + 300);
-
-        $sql = "SELECT * FROM tickets";
-        $result = $conn->query($sql);
-
-        if ($result->num_rows > 0) {
-            while ($row = $result->fetch_row()) {
-                $tickets[] = $row;
-            }
-        }
+        $_SESSION["admin"] = true;
     }
     header("Location: admin.php");
 }
@@ -28,28 +20,27 @@ if (isset($_POST["login"]) && isset($_POST["password"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Админ</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/admin.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/admin.css">
 </head>
 <body>
-    <? if (isset($_COOKIE["admin"])) {
+    <? if (isset($_SESSION["admin"])) {
         $tickets = [];
 
         $sql = "SELECT * FROM tickets";
         $result = $conn->query($sql);
-
+        
         if ($result->num_rows > 0) {
-            while ($row = $result->fetch_row()) {
+            while ($row = $result->fetch_assoc()) {
                 $tickets[] = $row;
             }
         }
-        for ($i = 0; $i < sizeof($tickets); $i++) { 
-    ?>
+        for ($i = 0; $i < sizeof($tickets); $i++) { ?>
         <div class="ticket">
-            <span>Номер заявки: <? echo $tickets[$i][0] ?></span>
-            <span>Имя: <? echo $tickets[$i][1] ?></span>
-            <span>Email: <a href="mailto:<? echo $tickets[$i][2] ?>"><? echo $tickets[$i][2] ?></a></span>
-            <span>Сообщение: <? echo $tickets[$i][3] ?></span>
+            <span>Номер заявки: <? echo $tickets[$i]["id"] ?></span>
+            <span>Имя: <? echo $tickets[$i]["name"] ?></span>
+            <span>Email: <a href="mailto:<? echo $tickets[$i]["email"] ?>"><? echo $tickets[$i]["email"] ?></a></span>
+            <span>Сообщение: <? echo $tickets[$i]["text"] ?></span>
         </div>
     <? }} else { ?>
         <form action method="post">

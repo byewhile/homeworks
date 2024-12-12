@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<? require_once "components/head.php" ?>
     <title>Калькулятор стоимости</title>
-    <meta name="description" content="Веб-студия - калькулятор стоимости">
-    <link rel="icon" href="./public/favicon.ico">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/cost.css">
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles/cost.css">
     <script src="calculator.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
-        <? require_once "./components/header.php" ?>
+        <? require_once "components/header.php" ?>
         <main>
             <div class="calculatorContainer">
                 <div>
