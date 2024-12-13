@@ -14,13 +14,13 @@
                 <div>
                     <a href="https://byewhile.ru/find-emoji/" target="_blank">
                         <img src="public/portfolioImg1.png" alt="Porfolio img">
-                        <h3>byewhile.ru - найди emoji</h3>
+                        <h3>byewhile.ru/find-emoji - найди emoji</h3>
                     </a>
                 </div>
                 <div>
                     <a href="https://byewhile.ru/assembly/" target="_blank">
                         <img src="public/portfolioImg2.png" alt="Porfolio img">
-                        <h3>byewhile.ru - сборка</h3>
+                        <h3>byewhile.ru/assembly - сборка</h3>
                     </a>
                 </div>
             </div>

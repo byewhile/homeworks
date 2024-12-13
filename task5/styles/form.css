@@ -26,11 +26,16 @@ input, textarea {
     padding: 1%;
     font-size: 20px;
 }
-input[type="submit"] {
+form span {
+    color: transparent;
+}
+button {
     cursor: pointer;
     width: 25%;
-    color: black;
     background-color: transparent;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
+    padding: 1%;
+    border: 0;
+    font-size: 20px;
 }

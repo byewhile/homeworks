@@ -13,14 +13,8 @@ if (isset($_POST["login"]) && isset($_POST["password"])) {
     }
     header("Location: admin.php");
 }
-?>
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+require_once "components/head.php" ?>
     <title>Админ</title>
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/admin.css">
 </head>
 <body>

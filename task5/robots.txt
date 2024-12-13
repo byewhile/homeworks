@@ -1,6 +1,7 @@
 User-agent: *
 
 Disallow: /styles
+Disallow: /js
 
 Allow: /public
 Allow: /components

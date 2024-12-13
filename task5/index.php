@@ -16,10 +16,10 @@
             </div>
             <div class="homeContainerImg">
                 <div class="imgsContainer">
-                    <img src="public/homeImg1.jpg" alt="Home img">
-                    <img src="public/homeImg2.jpg" alt="Home img">
-                    <img src="public/homeImg3.jpg" alt="Home img">
-                    <img src="public/homeImg4.jpg" alt="Home img">
+                    <img src="public/homeImg1.jpg" alt="Home img1">
+                    <img src="public/homeImg2.jpg" alt="Home img2">
+                    <img src="public/homeImg3.jpg" alt="Home img3">
+                    <img src="public/homeImg4.jpg" alt="Home img4">
                 </div>
             </div>
         </main>

@@ -1,7 +1,7 @@
 <? require_once "components/head.php" ?>
     <title>Калькулятор стоимости</title>
     <link rel="stylesheet" href="styles/cost.css">
-    <script src="calculator.js" defer></script>
+    <script src="js/calculator.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
