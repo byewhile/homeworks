@@ -10,13 +10,11 @@
 </head>
 <body class="p-3">
     <? require_once "./components/header.php" ?>
-    <main class="d-flex align-items-center mt-5 container">
-        <div class="w-50">
-            <h1>Веб-студия</h1>
-            <p class="fs-5">Создавайте, вдохновляйте, преображайте! Наша веб-студия специализируется на разработке уникальных и эффективных веб-решений, которые помогут вашему бизнесу выйти на новый уровень. Мы понимаем, что каждый проект уникален, и поэтому подходим к каждому клиенту индивидуально.</p>
-        </div>
-        <div class="w-50 d-flex justify-content-center">
-            <img src="./images/task.jpg" alt="Главная картинка">
+    <main class="mt-5 container">
+        <h1>Веб-студия</h1>
+        <div class="d-flex flex-wrap align-items-center justify-content-between">
+            <p class="fs-5" style="width: 700px;">Создавайте, вдохновляйте, преображайте! Наша веб-студия специализируется на разработке уникальных и эффективных веб-решений, которые помогут вашему бизнесу выйти на новый уровень. Мы понимаем, что каждый проект уникален, и поэтому подходим к каждому клиенту индивидуально.</p>
+            <img src="./images/task.jpg" alt="Главная картинка" style="width: 300px;">
         </div>
     </main>
 </body>
