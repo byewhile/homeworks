@@ -58,7 +58,7 @@ $conn = new mysqli($server, $dbusername, $dbpassword, $dbname);
     <table border="1">
         <? for ($i = 0; $i < sizeof($students); $i++) { ?>
             <tr>
-                <? if ($_GET["edit"] == $students[$i]["id"]) { ?>
+                <? if (!empty($_GET["edit"]) && $_GET["edit"] == $students[$i]["id"]) { ?>
                     <form action method="post">
                         <td><input type="text" name="id" value="<? echo $students[$i]["id"] ?>" hidden></td>
                         <td><input type="text" name="fullNameEdit" value="<? echo $students[$i]["value"] ?>" required></td>
