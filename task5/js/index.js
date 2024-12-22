@@ -12,3 +12,10 @@ if (titleText != null) {
         }
     });
 }
+
+const menu_icon = document.querySelector(".menu-icon");
+const hamburger_menu = document.querySelector(".hamburger-menu");
+
+menu_icon.addEventListener("click", () => {
+    hamburger_menu.classList.toggle("show-menu");
+});
