@@ -1,10 +1,10 @@
-<? require_once "components/head.php" ?>
+<?php require_once "components/head.php" ?>
     <title>Технологии разработки</title>
     <link rel="stylesheet" href="styles/technologies.css">
 </head>
 <body>
     <div class="wrapper">
-        <? require_once "components/header.php" ?>
+        <?php require_once "components/header.php" ?>
         <main>
             <div class="technologiesContainerText">
                 <h2>Современные технологии для вашего успеха</h2>
