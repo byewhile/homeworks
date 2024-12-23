@@ -1,10 +1,10 @@
-<? require_once "components/head.php" ?>
+<?php require_once "components/head.php" ?>
     <title>Главная страница</title>
     <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
     <div class="wrapper">
-        <? require_once "components/header.php" ?>
+        <?php require_once "components/header.php" ?>
         <main>
             <div class="homeContainerText">
                 <p>Мы внедряем цифровые технологии</p>
