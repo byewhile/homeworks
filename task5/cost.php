@@ -1,11 +1,11 @@
-<? require_once "components/head.php" ?>
+<?php require_once "components/head.php" ?>
     <title>Калькулятор стоимости</title>
     <link rel="stylesheet" href="styles/cost.css">
     <script src="js/calculator.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
-        <? require_once "components/header.php" ?>
+        <?php require_once "components/header.php" ?>
         <main>
             <div class="calculatorContainer">
                 <div>
