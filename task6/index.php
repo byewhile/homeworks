@@ -58,7 +58,7 @@ require_once "db.php"
             $pageCount = $result->num_rows;
 
             for ($i = 1; $i <= ceil($pageCount / 20); $i++) { ?>
-                <a href="index.php?page=<? echo $i ?>"><? echo $i ?></a>
+                <a href="index.php?page=<?php echo $i ?>"><?php echo $i ?></a>
             <?php } ?>
         </ul>
     </div>
