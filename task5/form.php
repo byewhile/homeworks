@@ -1,11 +1,11 @@
-<? require_once "components/head.php" ?>
+<?php require_once "components/head.php" ?>
     <title>Форма заявки услуг</title>
     <link rel="stylesheet" href="styles/form.css">
     <script src="js/sendText.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
-        <? require_once "components/header.php" ?>
+        <?php require_once "components/header.php" ?>
         <main>
             <div class="formContainerText">
                 <span>Свяжитесь с нами прямо сейчас</span>
