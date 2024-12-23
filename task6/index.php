@@ -43,12 +43,12 @@ require_once "db.php"
     $messagesCount = sizeof($messages);
     ?>
     <div>
-        <? for ($i = 0; $i < $messagesCount; $i++) { ?>
+        <?php for ($i = 0; $i < $messagesCount; $i++) { ?>
             <div>
-                <span>Имя: <? echo $messages[$i]["username"] ?></span>
-                <span>Сообщение: <? echo $messages[$i]["message"] ?></span>
+                <span>Имя: <?php echo $messages[$i]["username"] ?></span>
+                <span>Сообщение: <?php echo $messages[$i]["message"] ?></span>
             </div>
-        <? } ?>
+        <?php } ?>
     </div>
     <div>
         <ul>
@@ -59,7 +59,7 @@ require_once "db.php"
 
             for ($i = 1; $i <= ceil($pageCount / 20); $i++) { ?>
                 <a href="index.php?page=<? echo $i ?>"><? echo $i ?></a>
-            <? } ?>
+            <?php } ?>
         </ul>
     </div>
 </body>
