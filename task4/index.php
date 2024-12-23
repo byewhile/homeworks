@@ -56,23 +56,23 @@ $conn = new mysqli($server, $dbusername, $dbpassword, $dbname);
     }
     ?>
     <table border="1">
-        <? for ($i = 0; $i < sizeof($students); $i++) { ?>
+        <?php for ($i = 0; $i < sizeof($students); $i++) { ?>
             <tr>
-                <? if (!empty($_GET["edit"]) && $_GET["edit"] == $students[$i]["id"]) { ?>
+                <?php if (!empty($_GET["edit"]) && $_GET["edit"] == $students[$i]["id"]) { ?>
                     <form action method="post">
-                        <td><input type="text" name="id" value="<? echo $students[$i]["id"] ?>" hidden></td>
-                        <td><input type="text" name="fullNameEdit" value="<? echo $students[$i]["value"] ?>" required></td>
-                        <td><input type="datetime-local" name="date" value="<? echo $students[$i]["action_date"] ?>" required></td>
+                        <td><input type="text" name="id" value="<?php echo $students[$i]["id"] ?>" hidden></td>
+                        <td><input type="text" name="fullNameEdit" value="<?php echo $students[$i]["value"] ?>" required></td>
+                        <td><input type="datetime-local" name="date" value="<?php echo $students[$i]["action_date"] ?>" required></td>
                         <td><input type="submit" value="Сохранить"></td>
                     </form>
-                <? } else { ?>
-                    <td><? echo $students[$i]["value"] ?></td>
-                    <td><? echo $students[$i]["action_date"] ?></td>
-                    <td><a href="?edit=<? echo $students[$i]["id"] ?>">Редактировать</a></td>
-                    <td><a href="?delete=<? echo $students[$i]["id"] ?>">Удалить</a></td>
-                <? } ?>
+                <?php } else { ?>
+                    <td><?php echo $students[$i]["value"] ?></td>
+                    <td><?php echo $students[$i]["action_date"] ?></td>
+                    <td><a href="?edit=<?php echo $students[$i]["id"] ?>">Редактировать</a></td>
+                    <td><a href="?delete=<?php echo $students[$i]["id"] ?>">Удалить</a></td>
+                <?php } ?>
             </tr>
-        <? } ?>
+        <?php } ?>
     </table>
 </body>
 </html>
