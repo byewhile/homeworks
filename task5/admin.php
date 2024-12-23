@@ -18,7 +18,7 @@ require_once "components/head.php" ?>
     <link rel="stylesheet" href="styles/admin.css">
 </head>
 <body>
-    <? if (isset($_SESSION["admin"])) {
+    <?php if (isset($_SESSION["admin"])) {
         $tickets = [];
 
         $sql = "SELECT * FROM tickets";
@@ -31,17 +31,17 @@ require_once "components/head.php" ?>
         }
         for ($i = 0; $i < sizeof($tickets); $i++) { ?>
         <div class="ticket">
-            <span>Номер заявки: <? echo $tickets[$i]["id"] ?></span>
-            <span>Имя: <? echo $tickets[$i]["name"] ?></span>
-            <span>Email: <a href="mailto:<? echo $tickets[$i]["email"] ?>"><? echo $tickets[$i]["email"] ?></a></span>
-            <span>Сообщение: <? echo $tickets[$i]["text"] ?></span>
+            <span>Номер заявки: <?php echo $tickets[$i]["id"] ?></span>
+            <span>Имя: <?php echo $tickets[$i]["name"] ?></span>
+            <span>Email: <a href="mailto:<?php echo $tickets[$i]["email"] ?>"><?php echo $tickets[$i]["email"] ?></a></span>
+            <span>Сообщение: <?php echo $tickets[$i]["text"] ?></span>
         </div>
-    <? }} else { ?>
+    <?php }} else { ?>
         <form action method="post">
             <input type="text" name="login" maxlength="64" placeholder="Логин" autocomplete="on" required>
             <input type="password" name="password" maxlength="32" placeholder="Пароль" required>
             <input type="submit" value="Войти">
         </form>
-    <? } ?>
+    <?php } ?>
 </body>
 </html>
